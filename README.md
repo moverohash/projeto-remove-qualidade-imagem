@@ -1,7 +1,3 @@
-# Pega sua imagem de alta resolucao e diminui o size
-
-**Obs:** Uso pessoal, em momento de preguiça utilizei o ChatGPT , para gerar todo o codigo .
-
 # Libs
 - Pillow , Flask .
 
