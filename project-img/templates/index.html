@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Upload de Múltiplas Imagens</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="images" multiple required>
+        <button type="submit">Enviar</button>
+    </form>
+    <ul>
+        {% for image_path in image_paths %}
+        <li><img src="{{ image_path }}" alt="Imagem Redimensionada" style="max-width: 200px;"></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
